@@ -1,0 +1,216 @@
+/*Обнуление*/
+*{
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+*,*:before,*:after{
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+
+nav,footer,header,aside{display: block;}
+
+html,body{
+	height: 100%;
+	width: 100%;
+	font-size: 100%;
+	line-height: 1;
+	font-size: 1rem;
+	-ms-text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+}
+input,button,textarea{font-family:inherit;}
+
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner {padding:0;border:0;}
+a, a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
+/*--------------------*/
+
+
+body {
+	padding: 0px 25px;
+	font-family: Verdana, sans-serif; 
+	font-size: 100%;
+
+}
+
+h1 {
+	font-family: "Marko One",  sans-serif;
+	font-size: 2em;
+	font-weight: bold;
+	color: #fff;
+}
+
+h2 {
+	font-size: 1em;
+}
+dt {
+	font-weight: bold;
+}
+strong {
+	font-style: italic;
+}
+
+header {
+	margin-top: 0;
+	padding: 2em 1em 2em 1em;
+	text-align: center;
+	background-color: rgba(37, 64, 121, 0.2);
+	background-image: url(../img/Megafon48.png);
+	background-repeat: space;
+	text-shadow: .05em .05em .2em lightslategray;
+	color: rgb(163, 214, 235);
+
+	font: Sans-Serif 5em bold  ;
+  }
+
+.plotter {color: fuchsia; font-size: 2em;}
+.plotter h1 {color: green; font-family: serif; font-stretch: normal;}
+.plotter p {color: rgb(95, 231, 31);
+font: oblique 2em bold  ;}
+.footer1 { color: mediumblue;}
+
+.input1  { 
+	border: 4px;
+	color: #cc3d3d;
+	background-color: #c6de89;
+}
+	
+blockquote {
+	margin: 1em 1em 1em 1em;  
+	padding: 1em 1em 1em 1em;
+	border: 4px dashed;
+	color: green;
+	font-size: 30px;
+	font-style: italic;
+	
+	}
+	.ex-text {
+		margin: 1em 1em 1em 1em;  
+		padding: 1em 1em 1em 1em;
+		border: 4px dashed;
+		color: green;
+		font-size: 30px;
+		font-style: italic;
+	}
+
+	.ex-block {
+		margin: 10px;  
+		padding: 1em 1em 1em 1em;
+		text-decoration: royalblue;
+
+		height: 300px;
+		
+		border: 1px dotted red;
+		color: green;
+		font-size: 14px;
+		font-style: italic;
+		background-color: rgba(188, 143, 143, 0.514);
+		border-radius: 15px;
+		box-shadow: -3px 3px 5px rgba(116, 20, 20, 0.589) ;
+
+		background:url(../img/Мегафон600.png) 50%/cover no-repeat;
+
+	}
+	.ex-block p::first-letter {
+		font-size: xx-large;
+		color: crimson;
+	
+	}
+	.ex-image {
+
+		width: 100%;
+		max-width: 300px;
+	}
+
+
+	.block {
+		padding: 10px 30px;
+		margin: 10px 10px;
+		height: max-height;
+		width: 80%;
+		box-shadow: 0 0 10px #000;
+		/* background-color: rgba(24,181,164,0.5); */
+		background-image: url(../img/gooseshadow.png);
+		background-repeat: space;
+		font: bold hsl(192, 70%, 58%) ;
+		text-shadow: .05em .05em .1em lightslategray;
+		/* background-image: linear-gradient(90deg, red 25%, yellow , white) */
+		
+		overflow: hidden;
+	}
+	.block p:nth-child(odd) {
+		background-color: rgba(222, 184, 135, 0.466);
+	}
+
+
+	.block1 {
+		padding: 10px 30px;
+		margin: 10px 10px;
+		height: max-height;
+		width: 100%;
+		box-shadow: 0 0 10px #000;
+		/* background-color: rgba(24,181,164,0.5); */
+		font: bold hsl(192, 70%, 58%) ;
+		text-shadow: .05em .05em .1em lightslategray;
+		/* background-image: linear-gradient(90deg, red 25%, yellow , white) */
+		
+		overflow: hidden;
+	}
+	.block1 img {
+		float: left;
+		margin-right: 40px;
+		min-width: 10%;
+	}
+	p.float {
+border: solid 1px green;
+		float: left;
+		
+		width: 40%;
+	}
+	.float em {
+		position: relative;
+		left: 2em;
+		top: 3em;
+		background-color: cyan;
+		
+	}
+
+	#button {
+		position: fixed;
+		top: 30px;
+		left: 50px;
+		}
+
+	.mybutton {
+			position: fixed;
+		top: 0%;
+		bottom: 10%;
+		left: 0%;
+		transition-property: top, bottom;
+		transition-duration: 1s;
+		}
+
+		.mybutton img {
+			max-width: 10%;
+			transition-property: max-width;
+			transition-duration: 0.5s;
+			transition-timing-function: ease-in-out;
+			transition-delay: 0.4s;
+		}
+
+		.mybutton a:hover img {
+			max-width: 15%;
+		}
+		
